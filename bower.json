@@ -1,0 +1,31 @@
+{
+  "name": "lintel-contrib-cards",
+  "version": "0.1.0",
+  "description": "Cards for lintel.",
+  "homepage": "https://github.com/lintelio/lintel-contrib-cards",
+  "repository": "https://github.com/lintelio/lintel-contrib-cards.git",
+  "keywords": [
+    "lintelmodule",
+    "lintel"
+  ],
+  "main": [
+    "sass/cards.sass",
+    "dist/cards.min.css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lintel": "~0.1.0"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "/.*",
+    "sass/lintel-core-loader.scss"
+  ],
+  "authors": [
+    {
+      "name": "Marius Craciunoiu",
+      "email": "",
+      "url": "mariusc23.com"
+    }
+  ]
+}
