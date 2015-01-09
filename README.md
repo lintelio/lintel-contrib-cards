@@ -28,52 +28,116 @@ You can use [wiredep](https://github.com/taptapship/wiredep) or [grunt-wiredep](
 ## Variables
 Check the vars file in the `sass` folder to see the full list of variables you can customize.
 
-#### $bacon-bg
-Default value: `#4b77be`  
+#### $card-padding-y
+Default value: `$cushion-y-md`  
 
-Change the bacon background.
+Change the default padding-top and padding-bottom.
 
-#### $bacon-border
-Default value: `#f00`  
+#### $card-padding-x
+Default value: `$cushion-x-md`  
 
-Change the bacon border color.
+Change the default padding-left and padding-right.
 
-#### $bacon-text
+#### $card-header-padding-y, $card-body-padding-y, $card-footer-padding-y
+Default value: `$card-padding-y`  
+
+Change padding-top and padding-bottom for a specific part.
+
+#### $card-header-padding-x, $card-bodx-padding-x, $card-footer-padding-x
+Default value: `$card-padding-x`  
+
+Change padding-left and padding-right for a specific part.
+
+#### $card-bg
 Default value: `#fff`  
 
-Change the bacon text color.
+Card background.
 
+#### $card-border
+Default value: `$border-base`  
 
-## Mixins
-Check the mixins file in the `sass` folder to see how you can extend this module.
+Header and footer border.
 
-#### make-bacon($bg, $border, $text)
-Default $bg: `$bacon-bg`  
-Default $border: `$bacon-border`  
-Default $text: `$bacon-text`  
+#### $card-border-dark
+Default value: `$border-dark`  
 
-Sets the background, border, and text color of an element.
+Card border.
 
-```scss
-.bacon-primary {
-  @include make-bacon(#fff, #f00, #000);
-}
-```
+#### $card-border-radius
+Default value: `$border-radius-small`  
+
+Card border-radius.
+
+#### $card-header-text
+Default value: `$text-base`  
+
+Header text color.
 
 
 ## Examples
 
-#### Bacon
+#### Base Card
 ```html
-<div class="bacon">
-  Hello world!
+<div class="card">
+  <div class="card-header">
+    <h1 class="card-heading text-h5">
+      Title
+    </h1>
+  </div>
+  <div class="card-body">
+    Body
+  </div>
+  <div class="card-footer">
+    Footer
+  </div>
 </div>
 ```
 
-#### Primary Bacon
+#### Linked Title
 ```html
-<div class="bacon bacon-primary">
-  Hello world!
+<h1 class="card-heading text-h5">
+  <a href="#">Link Title</a>
+  <small>Subtitle</small>
+</h1>
+```
+
+#### Header Actions
+Note: make sure there are no spaces between the actions and `.card-heading` otherwise there will be a bit of space before the card title. See how to [remove the space between inline-block elements](http://css-tricks.com/fighting-the-space-between-inline-block-elements/).
+
+```html
+<div class="card-header">
+  <div class="card-header-actions">
+    <div class="btn-group">
+      <button class="btn" type="button">
+        Cancel
+      </button>
+      <button class="btn btn-primary" type="button">
+        Save
+      </button>
+    </div>
+  </div><!--
+  --><h1 class="card-heading text-h5">
+    Card Title
+  </h1>
+</div>
+```
+
+#### Footer Actions
+Note: make sure there are no spaces between the actions any optional text on the left. See how to [remove the space between inline-block elements](http://css-tricks.com/fighting-the-space-between-inline-block-elements/).
+
+```html
+<div class="card-footer">
+  <div class="card-footer-actions">
+    <div class="btn-group">
+      <button class="btn" type="button">
+        Cancel
+      </button>
+      <button class="btn btn-primary" type="button">
+        Save
+      </button>
+    </div>
+  </div><!--
+  --><span class="text-muted">Last Saved: Right Now</span>
 </div>
 ```
 
