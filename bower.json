@@ -16,7 +16,9 @@
   "dependencies": {
     "lintel": "~0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "lintel-contrib-buttons": "~0.1.2"
+  },
   "ignore": [
     "/.*",
     "sass/lintel-core-loader.scss"

@@ -1,5 +1,5 @@
 lintel-contrib-cards
-=====================
+====================
 
 > Cards for lintel.
 

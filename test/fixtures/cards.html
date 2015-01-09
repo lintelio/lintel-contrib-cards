@@ -2,36 +2,250 @@
 <html>
   <head>
     <link rel="stylesheet" href="../../bower_components/lintel/dist/lintel.css">
+    <link rel="stylesheet" href="../../bower_components/lintel-contrib-buttons/dist/buttons.css">
     <link rel="stylesheet" href="../../dist/cards.css">
   </head>
   <body class="pad">
 
-    <div class="bacon">
-      Does anybody else feel jealous and aroused and worried?
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading text-h5">
+          <a href>Link Title</a>
+          <small>Subtitle</small>
+        </h1>
+      </div>
+      <div class="card-body">
+        Body
+      </div>
+      <div class="card-footer">
+        Footer
+      </div>
     </div>
 
-    <div class="bacon bacon-primary">
-      You're going to do his laundry?
+    <!-- NO FOOTER -->
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading">
+          <a href>Link Title</a>
+          <small>Subtitle</small>
+        </h1>
+      </div>
+      <div class="card-body">
+        Body
+      </div>
     </div>
 
-    <div class="bacon bacon-secondary">
-      You're going back for the Countess, aren't you?
+    <!-- NO HEADER -->
+    <div class="card">
+      <div class="card-body">
+        Body
+      </div>
+      <div class="card-footer">
+        Footer
+      </div>
     </div>
 
-    <div class="bacon bacon-error">
-      A sexy mistake.
+    <!-- NO HEADER OR FOOTER -->
+    <div class="card">
+      <div class="card-body">
+        Body
+      </div>
     </div>
 
-    <div class="bacon bacon-warning">
-      Five hours? Aw, man! Couldn't you just get me the death penalty?
+    <!-- HEADER VARIATIONS -->
+    <div class="card">
+      <div class="card-header">
+        Text Node Title
+      </div>
+      <div class="card-body">
+        Body
+      </div>
     </div>
 
-    <div class="bacon bacon-success">
-      Hi, I'm a naughty nurse, and I really need someone to talk to. $9.95 a minute.
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading text-h5">
+          Heading Title
+        </h1>
+      </div>
+      <div class="card-body">
+        Body
+      </div>
     </div>
 
-    <div class="bacon bacon-info">
-      Fry, we have a crate to deliver.
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading text-h5 float-left">
+          Heading Title
+        </h1>
+        <button class="float-right" type="button">
+          Button
+        </button>
+      </div>
+      <div class="card-body">
+        Body
+      </div>
+    </div>
+
+    <!-- HEADER ACTIONS -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-header-actions">
+          <div class="btn-group">
+            <button class="btn" type="button">
+              Cancel
+            </button>
+            <button class="btn btn-primary" type="button">
+              Save
+            </button>
+          </div>
+        </div><!--
+        --><h1 class="card-heading text-h5">
+          Heading Title
+        </h1>
+      </div>
+      <div class="card-body">
+        Body
+      </div>
+    </div>
+
+    <!-- FOOTER ACTIONS -->
+     <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading text-h5">
+          Heading Title
+        </h1>
+      </div>
+      <div class="card-body">
+        Body
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-actions">
+          <div class="btn-group">
+            <button class="btn" type="button">
+              Cancel
+            </button>
+            <button class="btn btn-primary" type="button">
+              Save
+            </button>
+          </div>
+        </div><!--
+        --><span class="text-muted">Last Saved: Right Now</span>
+      </div>
+    </div>
+
+
+    <!-- IMAGE HEADER -->
+    <div class="cf">
+      <div class="card float-left">
+        <a class="card-header card-img">
+          <img src="http://placehold.it/350x150">
+        </a>
+        <div class="card-body">
+          Image Header
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE BODY -->
+    <div class="cf">
+      <div class="card float-left">
+        <div class="card-header">
+          <h1 class="card-heading text-h5">
+            Image Body
+          </h1>
+        </div>
+        <div class="card-body card-img">
+          <img src="http://placehold.it/350x150">
+        </div>
+        <div class="card-footer">
+          Image Body
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE FOOTER -->
+    <div class="cf">
+      <div class="card float-left">
+        <div class="card-body">
+          Image Footer
+        </div>
+        <div class="card-footer card-img">
+          <img src="http://placehold.it/350x150">
+        </div>
+      </div>
+    </div>
+
+    <!-- MEDIA OBJECT -->
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading text-h5">
+          Media Object
+        </h1>
+      </div>
+      <div class="card-body">
+        <div class="media">
+          <a class="media-object media-left" href="#">
+            <img src="http://placehold.it/50x50" alt="Media Object">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Media Left</h4>
+            <p>Professor, make a woman out of me. Large bet on myself in round one. Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans!</p>
+          </div>
+        </div>
+        <div class="media">
+          <a class="media-object media-left" href="#">
+            <img src="http://placehold.it/50x50" alt="Media Object">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Media Left</h4>
+            <p>Professor, make a woman out of me. Large bet on myself in round one. Humans dating robots is sick. You people wonder why I'm still single? It's 'cause all the fine robot sisters are dating humans!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-heading text-h5">
+          Form
+        </h1>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label class="form-label">
+              Label (child)
+              <input class="form-control" type="text" placeholder="Label">
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              Label (child)
+              <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </label>
+            <p class="form-help">Help text.</p>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="card-footer-actions">
+          <div class="btn-group">
+            <button class="btn" type="button">
+              Cancel
+            </button>
+            <button class="btn btn-primary" type="button">
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </body>

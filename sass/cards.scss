@@ -8,44 +8,94 @@
 
 // Base
 // ----
-.bacon {
-  background-color: $bacon-base-bg;
-  border: 1px solid $bacon-base-border;
-  border-radius: $bacon-border-radius;
-  color: $bacon-base-text;
-  padding: $bacon-padding-y $bacon-padding-x;
-  margin-bottom: $bacon-margin-y;
+.card {
+  background: $card-bg;
+  border: 1px solid $card-border-dark;
+  border-radius: $card-border-radius;
+  margin-bottom: $cushion-base;
+  max-width: 100%;
+  @if $card-box-shadow {
+    box-shadow: $card-box-shadow;
+  }
 }
 
 
-// States
+// Body
+// ----
+.card-body {
+  padding: $card-body-padding-y $card-body-padding-x;
+}
+
+
+// Header
 // ------
-// Primary
-.bacon-primary {
-  @include make-bacon($bg: $bacon-primary-bg, $border: $bacon-primary-border, $text: $bacon-primary-text);
+.card-header {
+  @include clearfix;
+  border-bottom: 1px solid $card-border;
+  color: $card-header-text;
+  display: block;
+  padding: $card-header-padding-y $card-header-padding-x;
 }
 
-// Secondary
-.bacon-secondary {
-  @include make-bacon($bg: $bacon-secondary-bg, $border: $bacon-secondary-border, $text: $bacon-secondary-text);
+@include mq($min: $screen-sm-min) {
+  .card-header {
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
-// Error
-.bacon-error {
-  @include make-bacon($bg: $bacon-error-bg, $border: $bacon-error-border, $text: $bacon-error-text);
+.card-header-actions {
+  display: inline-block;
+  margin-right: -100%;
+  text-align: right;
+  width: 100%;
 }
 
-// Warning
-.bacon-warning {
-  @include make-bacon($bg: $bacon-warning-bg, $border: $bacon-warning-border, $text: $bacon-warning-text);
+.card-heading {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle; // line up with .btns
+
+  > a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
-// Success
-.bacon-success {
-  @include make-bacon($bg: $bacon-success-bg, $border: $bacon-success-border, $text: $bacon-success-text);
+
+// Footer
+// ------
+.card-footer {
+  border-top: 1px solid $card-border;
+  display: block;
+  padding: $card-footer-padding-y $card-footer-padding-x;
 }
 
-// Info
-.bacon-info {
-  @include make-bacon($bg: $bacon-info-bg, $border: $bacon-info-border, $text: $bacon-info-text);
+.card-footer-actions {
+  @extend .card-header-actions;
+}
+
+
+// Image
+// -----
+.card-img {
+  padding: 0;
+
+  > img {
+    display: block;
+    width: 100%;
+  }
+
+  &.card-header {
+    border-top-left-radius: ($card-border-radius - 1);
+    border-top-right-radius: ($card-border-radius - 1);
+    overflow: hidden;
+  }
+
+  &.card-footer {
+    border-bottom-left-radius: ($card-border-radius - 1);
+    border-bottom-right-radius: ($card-border-radius - 1);
+    overflow: hidden;
+  }
 }
