@@ -1,6 +1,6 @@
 {
   "name": "lintel-contrib-cards",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cards for lintel.",
   "homepage": "https://github.com/lintelio/lintel-contrib-cards",
   "repository": "https://github.com/lintelio/lintel-contrib-cards.git",
@@ -9,7 +9,7 @@
     "lintel"
   ],
   "main": [
-    "sass/cards.sass",
+    "sass/cards.scss",
     "dist/cards.min.css"
   ],
   "license": "MIT",
